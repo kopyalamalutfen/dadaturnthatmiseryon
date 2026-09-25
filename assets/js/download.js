@@ -82,7 +82,7 @@
     request({ password: verifiedPassword, inviter: buildForm.elements.inviter.value.trim(), user, version: buildForm.elements.version.value }, result => {
       const url = new URL(result.downloadUrl);
       if (url.protocol !== "https:" || url.username || url.password) throw Error();
-      message("Your download is ready. Opening it now…"); window.location.assign(url.href);
+      message("Your download is being prepared…"); window.location.assign(url.href);
     });
   });
 })();
