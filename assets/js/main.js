@@ -1,5 +1,5 @@
 /* ============================================================
-   BADINORIS: BEYOND THE GATES — interactions
+   Gothimus: BEYOND THE GATES — interactions
    ============================================================ */
 (function () {
   "use strict";
@@ -375,97 +375,6 @@
   })();
 
   /* ---------------------------------------------------------
-     11. Download / build modal
-     --------------------------------------------------------- */
-  (function buildModal() {
-    var modal = $("#buildModal");
-    if (!modal) return;
-
-    var closeBtn = $("#buildClose");
-    var note = $("#buildNote");
-    var submitBtn = $("#buildSubmit");
-    var builds = $$(".build", modal);
-    var triggers = $$('[data-modal="build"]');
-    var lastFocus = null;
-    var selectedVersion = "v1.2.6";
-    var selectedUrl = builds.length ? (builds[0].getAttribute("data-dropbox") || "") : "";
-
-    /* ---- open / close ---- */
-    function focusables() {
-      return $$('button,input,[href],[tabindex]:not([tabindex="-1"])', modal)
-        .filter(function (el) { return !el.disabled && el.offsetParent !== null; });
-    }
-    function open() {
-      lastFocus = document.activeElement;
-      modal.hidden = false;
-      document.body.style.overflow = "hidden";
-      window.requestAnimationFrame(function () { modal.classList.add("show"); });
-      document.addEventListener("keydown", onKey);
-    }
-    function close() {
-      modal.classList.remove("show");
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-      window.setTimeout(function () {
-        modal.hidden = true;
-        if (lastFocus && lastFocus.focus) lastFocus.focus();
-      }, 320);
-    }
-    function onKey(e) {
-      if (e.key === "Escape") { close(); return; }
-      if (e.key === "Tab") {
-        var f = focusables();
-        if (!f.length) return;
-        var i = f.indexOf(document.activeElement);
-        if (e.shiftKey) (f[(i - 1 + f.length) % f.length] || f[f.length - 1]).focus();
-        else (f[(i + 1) % f.length] || f[0]).focus();
-        e.preventDefault();
-      }
-    }
-
-    triggers.forEach(function (t) {
-      t.addEventListener("click", function (e) { e.preventDefault(); open(); });
-    });
-    closeBtn.addEventListener("click", close);
-    modal.addEventListener("click", function (e) { if (e.target === modal) close(); });
-
-    /* ---- build selection ---- */
-    builds.forEach(function (b) {
-      b.addEventListener("click", function () {
-        selectedVersion = b.getAttribute("data-version") || "v1.2.6";
-        selectedUrl = b.getAttribute("data-dropbox") || "";
-        builds.forEach(function (x) {
-          var on = x === b;
-          x.classList.toggle("is-selected", on);
-          x.setAttribute("aria-checked", on ? "true" : "false");
-        });
-        setNote("Selected " + selectedVersion + " — click Download to get it from Dropbox.");
-      });
-    });
-
-    /* ---- helpers ---- */
-    function setNote(msg, kind) {
-      if (!note) return;
-      note.textContent = msg || "";
-      note.classList.toggle("is-error", kind === "error");
-      note.classList.toggle("flash", kind === "ok");
-    }
-
-    /* ---- submit: go straight to the Dropbox link for the chosen build ---- */
-    if (submitBtn) {
-      submitBtn.addEventListener("click", function () {
-        if (!selectedUrl || /REPLACE-ME/.test(selectedUrl)) {
-          setNote("Dropbox link isn't configured yet for " + selectedVersion + " — set data-dropbox on the build button in index.html.", "error");
-          return;
-        }
-        setNote("Redirecting you to Dropbox…", "ok");
-        window.location.href = selectedUrl;
-        window.setTimeout(close, 600);
-      });
-    }
-  })();
-
-  /* ---------------------------------------------------------
      12. YouTube trailer facade (lazy-load the player on click)
      --------------------------------------------------------- */
   (function trailerEmbed() {
@@ -476,7 +385,7 @@
       if (!id) return;
       var iframe = document.createElement("iframe");
       iframe.src = "https://www.youtube.com/embed/" + id + "?autoplay=1&rel=0&modestbranding=1";
-      iframe.title = "Badinoris trailer";
+      iframe.title = "Gothimus trailer";
       iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
       iframe.setAttribute("allowfullscreen", "");
       var wrap = facade.parentNode;

@@ -1,5 +1,5 @@
 /* ============================================================
-   BADINORIS: BEYOND THE GATES — promo site (DARK)
+   Gothimus: BEYOND THE GATES — promo site (DARK)
    Spirit-realm dark theme · static HTML/CSS/JS
    ============================================================ */
 
@@ -464,8 +464,60 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spa
   .ambient{display:none}
 }
 
-/* ============================================================
-   TURNSTILE (download modal bot check)
-   ============================================================ */
-.build-turnstile{margin:.9rem 0 .2rem;display:flex;justify-content:center}
-.build-turnstile:empty{display:none;margin:0}
+/* Quiet framing keeps the game artwork at the centre. */
+body::before,body::after,.story::before,.features::before,.download::before{display:none}
+.hero__bg{inset:0;will-change:auto}
+.hero__title{background:none;color:var(--cream);-webkit-text-fill-color:var(--cream);filter:none;animation:none;letter-spacing:-.035em}
+.hero__tagline{font-style:normal}
+.hero__status{letter-spacing:.04em;text-transform:none}
+.eyebrow{background:none;color:var(--muted);-webkit-text-fill-color:var(--muted);font-family:var(--sans);font-size:.75rem;letter-spacing:.12em}
+.reveal{opacity:1;transform:none;transition:none}
+.story__panel{padding:0;border:0;background:none;box-shadow:none}
+.card{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:1.8rem 0;box-shadow:none}
+.card:hover{transform:none;box-shadow:none;border-color:var(--line)}
+.features__grid{column-gap:3rem}
+.card__ico{display:none}
+.story__media,.shot,.shot:hover,.trailers__embed{box-shadow:none;border:1px solid var(--line);border-radius:3px}
+.shot:hover{transform:none}
+.shot__cap{opacity:1;transform:none;letter-spacing:.03em;text-transform:none}
+.gate__frame{padding:0;background:none;box-shadow:none;border:1px solid var(--line)}
+.panel,.modal__dialog{box-shadow:none}
+.platform-pending{grid-column:1/-1}
+.platform-pending p{color:var(--muted);margin-top:.6rem}
+
+/* Demo access: an artwork header and two focused steps. */
+.demo-dialog{width:min(100%,540px);padding:0;overflow:hidden;text-align:left;background:#1b1416;border:1px solid #544039;border-radius:12px;box-shadow:0 24px 90px #0008}
+.demo-dialog .modal__close{z-index:2;top:14px;right:14px;width:34px;height:34px;background:#160e10bb;border-color:#ffffff40;font-size:1.5rem}
+.demo-art{height:145px;background:linear-gradient(0deg,#1b1416,transparent 90%),url('../img/ss01.jpg') center 46%/cover;display:flex;align-items:flex-end;padding:24px 32px}
+.demo-art>span{font-family:var(--serif);font-weight:700;font-size:1.4rem;line-height:1.2;letter-spacing:.14em;text-shadow:0 2px 10px #000}
+.demo-art small{font-family:var(--sans);font-size:.55rem;letter-spacing:.26em;color:var(--cream-2)}
+.demo-content{padding:20px 32px 26px}
+.demo-progress{font-size:.65rem;letter-spacing:.15em;color:var(--gold);margin:0 0 12px}
+.demo-dialog .modal__title{font-size:2rem;line-height:1.1;margin:0 0 10px;letter-spacing:-.02em}
+.demo-subtitle{font-size:.9rem;color:var(--muted);margin-bottom:26px}
+.demo-form{display:grid;gap:10px}
+.demo-form[hidden]{display:none}
+.demo-form .field__label{font-size:.68rem;letter-spacing:.09em;color:var(--cream-2)}
+.demo-form .field__input{background:#100d0f;border-color:#4a383b;border-radius:6px;padding:13px 14px;font-size:.95rem}
+.demo-form .field__input[aria-invalid="true"]{border-color:#ee8c7b}
+.demo-submit{width:100%;margin-top:10px;justify-content:center;border-radius:5px;min-height:48px;font-size:.9rem;letter-spacing:.02em}
+.demo-submit:disabled{opacity:.55;cursor:wait}
+.demo-platform{font-size:.76rem;color:var(--cream-2);text-align:center;margin-top:10px;line-height:1.8}
+.demo-platform span{color:var(--muted)}
+.demo-builds{display:grid;gap:10px;border:0;padding:0;margin-top:12px;min-width:0}
+.demo-builds legend{margin-bottom:10px}
+.demo-build{display:flex;align-items:center;gap:12px;border:1px solid #4a383b;border-radius:7px;background:#171113;padding:15px;cursor:pointer;transition:border-color .15s,background .15s}
+.demo-build:has(input:checked){border-color:var(--gold);background:#2a211c}
+.demo-build:has(input:focus-visible){outline:2px solid var(--cream);outline-offset:3px}
+.demo-build input{accent-color:var(--gold);width:16px;height:16px;flex:none}
+.demo-build__body{display:block;flex:1;min-width:0}
+.demo-build__top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.demo-build__top strong{font-size:.92rem;font-weight:500}
+.demo-build__top small{font-size:.51rem;letter-spacing:.07em;color:var(--gold-light)}
+.demo-build__description{display:flex;gap:10px;font-size:.72rem;color:var(--cream-2);margin-top:4px}
+.demo-build__description>span{color:var(--muted)}
+.demo-back{justify-self:center;font-size:.8rem;color:var(--muted);padding:6px 12px;text-decoration:underline;text-underline-offset:4px}
+.download-privacy{font-size:.68rem;line-height:1.6;color:var(--muted);margin-top:8px}
+.demo-dialog .modal__note{margin:12px 0 0;min-height:0;font-size:.82rem;letter-spacing:0}
+.demo-dialog .modal__note:empty{display:none}
+@media(max-width:560px){.modal{padding:12px}.demo-content{padding:16px 22px 24px}.demo-art{height:112px;padding:18px 22px}.demo-dialog .modal__title{font-size:1.75rem}.demo-build__top{flex-wrap:wrap}.demo-build__description{flex-wrap:wrap;gap:2px 8px}}

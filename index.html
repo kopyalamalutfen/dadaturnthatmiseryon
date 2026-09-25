@@ -4,16 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light" />
-<title>Bonzimos: Beyond The Gates — Hand-drawn 2D action-adventure</title>
-<meta name="description" content="The spirit realm has broken. Your brother has gone missing. Forge the path you were destined for in Bonzimos: Beyond The Gates — a hand-drawn 2D souls-like action-adventure by ALUMNI. Free demo available now." />
+<title>Gothimus: Beyond The Gates — Hand-drawn 2D action-adventure</title>
+<meta name="description" content="Gothimus: Beyond The Gates. A hand-drawn 2D action-adventure by ALUMNI. Play the free Windows demo." />
 
 <!-- Open Graph / social -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Bonzimos: Beyond The Gates" />
-<meta property="og:description" content="The spirit realm has broken. Forge the path you were destined for. A hand-drawn 2D action-adventure. Free demo available now." />
+<meta property="og:title" content="Gothimus: Beyond The Gates" />
+<meta property="og:description" content="Gothimus: Beyond The Gates. A hand-drawn 2D action-adventure by ALUMNI. Play the free Windows demo." />
 <meta property="og:image" content="assets/img/ss01.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Bonzimos: Beyond The Gates" />
+<meta name="twitter:title" content="Gothimus: Beyond The Gates" />
 <meta name="twitter:description" content="Hand-drawn 2D souls-like. The spirit realm has broken. Free demo available now." />
 <meta name="twitter:image" content="assets/img/ss01.jpg" />
 
@@ -25,26 +25,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="assets/css/style.css?v=2" />
+<link rel="stylesheet" href="assets/css/style.css?v=5" />
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ===== AMBIENT CANVAS (petals + embers) ===== -->
-<canvas id="ambient" class="ambient" aria-hidden="true"></canvas>
+
 
 <!-- ===== NAV ===== -->
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a class="nav__brand" href="#top" aria-label="Bonzimos: Beyond The Gates — home">
+    <a class="nav__brand" href="#top" aria-label="Gothimus: Beyond The Gates — home">
       <svg class="nav__torii" viewBox="0 0 48 40" aria-hidden="true" focusable="false">
         <path d="M5 11 C18 5, 30 5, 43 11" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
         <path d="M8 17 H40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
         <path d="M14 11 V36" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
         <path d="M34 11 V36" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
       </svg>
-      <span class="nav__name">Bonzimos</span>
+      <span class="nav__name">Gothimus</span>
     </a>
     <nav class="nav__links" aria-label="Primary">
       <a href="#story">Story</a>
@@ -76,18 +76,18 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
-  <div class="hero__bg" data-parallax="0.12">
+  <div class="hero__bg">
     <img src="assets/img/ss01.jpg" alt="" fetchpriority="high" />
   </div>
-  <div class="hero__sun" aria-hidden="true"></div>
+  
   <div class="hero__vignette" aria-hidden="true"></div>
 
   <div class="hero__content reveal">
     <h1 class="hero__wordmark">
-      <span class="hero__title">Bonzimos</span>
+      <span class="hero__title">Gothimus</span>
       <span class="hero__subtitle">Beyond The Gates</span>
     </h1>
-    <p class="hero__tagline">The spirit realm has broken.<br/>Forge the path you were destined for.</p>
+    <p class="hero__tagline">Your brother is missing.<br/>His trail leads beyond the gates.</p>
     <div class="hero__cta">
       <button class="btn btn--primary" type="button" data-modal="build">
         <svg viewBox="0 0 24 24" class="btn__ico" aria-hidden="true"><path fill="currentColor" d="M12 3v10.5l3.5-3.5L17 11.4 12 16.4 7 11.4l1.5-1.4L12 13.5V3h0ZM5 18h14v2H5z"/></svg>
@@ -101,54 +101,45 @@
     <p class="hero__status"><span>Coming soon</span> · <span>Free demo available now</span></p>
   </div>
 
-  <a href="#story" class="hero__scroll" aria-label="Scroll to story">
-    <svg class="hero__lantern" viewBox="0 0 32 54" aria-hidden="true">
-      <line x1="16" y1="0" x2="16" y2="8" stroke="#C9A24B" stroke-width="1.5"/>
-      <rect x="6" y="8" width="20" height="6" rx="2" fill="#7a1d18"/>
-      <path d="M6 14 Q16 12 26 14 L28 34 Q16 38 4 34 Z" fill="#C43923"/>
-      <ellipse cx="16" cy="24" rx="9" ry="11" fill="#E0703A" opacity="0.55"/>
-      <rect x="6" y="34" width="20" height="6" rx="2" fill="#7a1d18"/>
-      <line x1="16" y1="40" x2="16" y2="50" stroke="#C9A24B" stroke-width="1.5"/>
-    </svg>
-  </a>
+  
 </section>
 
 <!-- ===== STORY ===== -->
 <section class="story" id="story">
   <div class="story__inner">
   <article class="panel story__panel reveal">
-    <span class="filigree filigree--tl" aria-hidden="true"></span>
-    <span class="filigree filigree--tr" aria-hidden="true"></span>
-    <span class="filigree filigree--bl" aria-hidden="true"></span>
-    <span class="filigree filigree--br" aria-hidden="true"></span>
-    <p class="eyebrow"><span class="kanji">壱</span> · The Broken Realm</p>
+    
+    
+    
+    
+    <p class="eyebrow">The Broken Realm</p>
     <h2 class="section-title">Beyond The Gates</h2>
-    <p class="lede">The spirit realm has broken, and the gates that once bound its worlds together have splintered apart.</p>
-    <p>Your brother walked beyond the gates — and never returned. Now you follow as <strong>Bonzimos</strong>, a lone seeker, crossing from world to world to uncover why <em>broken links</em> have torn through the realm.</p>
-    <p>Battle the things that wait in the dark. Discover what was lost. Make new connections along the way — every step rendered in a beautiful, hand-drawn 2D style.</p>
-    <blockquote class="pullquote">“Study your enemy. Then strike.”</blockquote>
+    <p class="lede">The gates between worlds are breaking. Your brother has disappeared beyond them.</p>
+    <p>Play as <strong>Gothimus</strong> and follow his trail through villages, forests and the spirit realm. Find the gates that still work and learn what happened to the others.</p>
+    <p>Fight your way past the creatures guarding each route. Meet the people who remain, find new equipment and decide where to go next.</p>
+    
   </article>
 
   <figure class="story__media reveal">
-    <span class="filigree filigree--tl" aria-hidden="true"></span>
-    <span class="filigree filigree--tr" aria-hidden="true"></span>
-    <span class="filigree filigree--bl" aria-hidden="true"></span>
-    <span class="filigree filigree--br" aria-hidden="true"></span>
+    
+    
+    
+    
     <img src="assets/img/ss06.jpg" alt="A glowing spirit gate awakening in a forest of the broken realm" loading="lazy" decoding="async" />
-    <figcaption><span class="kanji">縁</span> The gates still wait</figcaption>
+    <figcaption>The gates still wait</figcaption>
   </figure>
   </div>
 </section>
 
 <!-- torii divider -->
-<div class="divider" aria-hidden="true"><span class="divider__line"></span><svg class="divider__torii" viewBox="0 0 80 56"><path d="M6 14 C28 5, 52 5, 74 14" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><path d="M12 22 H68" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M22 14 V52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M58 14 V52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span class="divider__line"></span></div>
+
 
 <!-- ===== GATE OF WORLDS (before/after) ===== -->
 <section class="gate" id="gate">
   <div class="gate__head reveal">
-    <p class="eyebrow"><span class="kanji">弐</span> · Broken Links</p>
+    <p class="eyebrow">Broken Links</p>
     <h2 class="section-title">The Gate of Worlds</h2>
-    <p class="gate__sub">One gate. Two realms. Drag to cross the threshold — from the golden-hour world into the spirit realm beyond.</p>
+    <p class="gate__sub">Drag the slider to compare the village and the spirit realm.</p>
   </div>
   <div class="gate__stage reveal" data-stage>
     <div class="gate__frame">
@@ -171,44 +162,44 @@
 <!-- ===== FEATURES ===== -->
 <section class="features" id="features">
   <div class="features__head reveal">
-    <p class="eyebrow"><span class="kanji">参</span> · The Journey</p>
-    <h2 class="section-title">What awaits beyond</h2>
+    <p class="eyebrow">The Journey</p>
+    <h2 class="section-title">Combat &amp; exploration</h2>
   </div>
   <div class="features__grid">
     <article class="card reveal">
-      <span class="filigree filigree--tl"></span><span class="filigree filigree--br"></span>
+      
       <span class="card__ico" aria-hidden="true">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40 L34 14"/><path d="M30 10 l8 0 0 8"/><path d="M30 18 l8-8"/><path d="M8 40 l6-2 -4-4 -2 6Z" fill="currentColor"/></svg>
       </span>
       <h3>Deliberate Combat</h3>
-      <p>Dodge, parry, dash and slash through enemies and bosses, each with their own patterns. Study them closely — then strike when you are ready.</p>
+      <p>Dodge, parry and attack. Each enemy has its own timing; watch for an opening before committing.</p>
     </article>
 
     <article class="card reveal">
-      <span class="filigree filigree--tl"></span><span class="filigree filigree--br"></span>
+      
       <span class="card__ico" aria-hidden="true">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 C20 10, 28 10, 40 18"/><path d="M11 24 H37"/><path d="M16 18 V40"/><path d="M32 18 V40"/><circle cx="24" cy="31" r="4" fill="currentColor" stroke="none" opacity="0.7"/></svg>
       </span>
       <h3>Connected Gates</h3>
-      <p>Discover new gates and worlds, all bound together by the spiritual gates of the realm. Decide your path and uncover why the links have broken.</p>
+      <p>Move between worlds through spirit gates. Explore their connections and choose which route to follow.</p>
     </article>
 
     <article class="card reveal">
-      <span class="filigree filigree--tl"></span><span class="filigree filigree--br"></span>
+      
       <span class="card__ico" aria-hidden="true">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38 C18 30, 22 18, 38 10"/><path d="M38 10 C34 16, 34 20, 36 24"/><path d="M10 38 l-2 4 4-2"/><path d="M30 16 q4 2 6 6" /></svg>
       </span>
       <h3>A Hand-Drawn Realm</h3>
-      <p>Every character, every painted landscape, every frame drawn by hand — the traditional 2D art that pioneered the genre, brought back with a modern flare.</p>
+      <p>Hand-drawn characters and backgrounds, from lantern-lit streets to quiet forests and violet caverns.</p>
     </article>
 
     <article class="card reveal">
-      <span class="filigree filigree--tl"></span><span class="filigree filigree--br"></span>
+      
       <span class="card__ico" aria-hidden="true">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8 C14 8, 9 16, 9 24 C9 34, 16 40, 24 40 C32 40, 39 34, 39 24 C39 16, 34 8, 24 8Z"/><path d="M14 12 l4 6M34 12 l-4 6"/><circle cx="18" cy="24" r="2" fill="currentColor" stroke="none"/><circle cx="30" cy="24" r="2" fill="currentColor" stroke="none"/><path d="M20 31 q4 3 8 0"/></svg>
       </span>
       <h3>Secrets &amp; Spirits</h3>
-      <p>Learn new arts, skills and equipment. Make new friends, uncover the realm's hidden secrets, and find your way to your missing brother.</p>
+      <p>Find skills and equipment as you explore. Talk to the people you meet and look for clues about your brother.</p>
     </article>
   </div>
 </section>
@@ -216,8 +207,8 @@
 <!-- ===== GALLERY ===== -->
 <section class="gallery" id="gallery">
   <div class="gallery__head reveal">
-    <p class="eyebrow"><span class="kanji">肆</span> · The World</p>
-    <h2 class="section-title">A realm worth crossing</h2>
+    <p class="eyebrow">The World</p>
+    <h2 class="section-title">Screenshots</h2>
   </div>
   <div class="gallery__grid" id="galleryGrid">
     <!-- items injected/enhanced by JS; static markup for no-JS fallback -->
@@ -265,17 +256,17 @@
 </section>
 
 <!-- torii divider -->
-<div class="divider divider--dark" aria-hidden="true"><span class="divider__line"></span><svg class="divider__torii" viewBox="0 0 80 56"><path d="M6 14 C28 5, 52 5, 74 14" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><path d="M12 22 H68" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M22 14 V52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M58 14 V52" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span class="divider__line"></span></div>
+
 
 <!-- ===== TRAILERS ===== -->
 <section class="trailers" id="trailers">
   <div class="trailers__head reveal">
-    <p class="eyebrow"><span class="kanji">縁</span> · Watch</p>
-    <h2 class="section-title">See it in motion</h2>
+    <p class="eyebrow">Watch</p>
+    <h2 class="section-title">Gameplay trailer</h2>
   </div>
   <div class="trailers__embed reveal">
-    <button class="video" id="trailerVideo" type="button" data-video="ZMHcxKrunGo" aria-label="Play the Bonzimos trailer">
-      <img class="video__poster" src="https://img.youtube.com/vi/ZMHcxKrunGo/maxresdefault.jpg" alt="Bonzimos trailer" loading="lazy"
+    <button class="video" id="trailerVideo" type="button" data-video="ZMHcxKrunGo" aria-label="Play the Gothimus trailer">
+      <img class="video__poster" src="https://img.youtube.com/vi/ZMHcxKrunGo/maxresdefault.jpg" alt="Gothimus trailer" loading="lazy"
            onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ZMHcxKrunGo/hqdefault.jpg'" />
       <span class="video__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></span>
     </button>
@@ -286,17 +277,17 @@
 <!-- ===== FAQ ===== -->
 <section class="faq" id="faq">
   <div class="faq__head reveal">
-    <p class="eyebrow"><span class="kanji">伍</span> · Questions</p>
-    <h2 class="section-title">Before you cross</h2>
+    <p class="eyebrow">Questions</p>
+    <h2 class="section-title">Questions &amp; answers</h2>
   </div>
   <div class="faq__list reveal">
     <details class="qa">
-      <summary>What kind of game is Bonzimos?<span class="qa__mark" aria-hidden="true"></span></summary>
-      <div class="qa__body"><p>Bonzimos: Beyond The Gates is a hand-drawn 2D action-adventure with deliberate, souls-like combat and interconnected, metroidvania-style worlds. Battle, explore, and uncover the secrets of a broken spirit realm.</p></div>
+      <summary>What kind of game is Gothimus?<span class="qa__mark" aria-hidden="true"></span></summary>
+      <div class="qa__body"><p>Gothimus: Beyond The Gates is a hand-drawn 2D action-adventure with deliberate, souls-like combat and interconnected, metroidvania-style worlds. Battle, explore, and uncover the secrets of a broken spirit realm.</p></div>
     </details>
     <details class="qa">
       <summary>When does it release?<span class="qa__mark" aria-hidden="true"></span></summary>
-      <div class="qa__body"><p>It's coming soon. An exact date hasn't been announced yet — follow the studio's channels to be notified the moment it launches.</p></div>
+      <div class="qa__body"><p>The release date has not been announced yet.</p></div>
     </details>
     <details class="qa">
       <summary>Is there a demo?<span class="qa__mark" aria-hidden="true"></span></summary>
@@ -304,7 +295,7 @@
     </details>
     <details class="qa">
       <summary>What platforms is it on?<span class="qa__mark" aria-hidden="true"></span></summary>
-      <div class="qa__body"><p>Windows 10 (64-bit) and macOS (Apple Silicon, M1 and newer). Full controller support is included.</p></div>
+      <div class="qa__body"><p>The demo is available for Windows 10 (64-bit). MacBook / macOS support is coming soon.</p></div>
     </details>
     <details class="qa">
       <summary>How difficult is it?<span class="qa__mark" aria-hidden="true"></span></summary>
@@ -316,7 +307,7 @@
     </details>
     <details class="qa">
       <summary>Who is making it?<span class="qa__mark" aria-hidden="true"></span></summary>
-      <div class="qa__body"><p>Bonzimos is created by indie studio ALUMNI — a single-player adventure, hand-drawn with love.</p></div>
+      <div class="qa__body"><p>Gothimus is a single-player action-adventure developed by ALUMNI.</p></div>
     </details>
   </div>
 </section>
@@ -325,9 +316,9 @@
 <section class="download" id="download">
   <div class="download__inner">
     <div class="download__cta reveal">
-      <p class="eyebrow"><span class="kanji">陸</span> · Begin</p>
-      <h2 class="section-title">Step through the gate</h2>
-      <p class="download__copy">The realm is broken and your brother is gone. Download the free demo and begin your journey through the gates of the spirit realm.</p>
+      <p class="eyebrow">Begin</p>
+      <h2 class="section-title">Play the demo</h2>
+      <p class="download__copy">Available now for Windows 10 (64-bit). MacBook / macOS support is coming soon.</p>
       <div class="download__btns">
         <button class="btn btn--primary" type="button" data-modal="build">
           <svg viewBox="0 0 24 24" class="btn__ico" aria-hidden="true"><path fill="currentColor" d="M12 3v10.5l3.5-3.5L17 11.4 12 16.4 7 11.4l1.5-1.4L12 13.5V3h0ZM5 18h14v2H5z"/></svg>
@@ -341,11 +332,11 @@
     </div>
 
     <div class="sysreq panel reveal">
-      <span class="filigree filigree--tl"></span><span class="filigree filigree--tr"></span>
-      <span class="filigree filigree--bl"></span><span class="filigree filigree--br"></span>
+      
+      
       <div class="sysreq__tabs" role="tablist" aria-label="Platform">
         <button class="sysreq__tab is-active" role="tab" aria-selected="true" data-os="win">Windows</button>
-        <button class="sysreq__tab" role="tab" aria-selected="false" data-os="mac">macOS</button>
+        <button class="sysreq__tab" role="tab" aria-selected="false" data-os="mac">macOS · Coming soon</button>
       </div>
 
       <div class="sysreq__panel" data-os="win">
@@ -371,28 +362,7 @@
         </div>
       </div>
 
-      <div class="sysreq__panel is-hidden" data-os="mac">
-        <div class="sysreq__col">
-          <h4>Minimum</h4>
-          <dl>
-            <dt>OS</dt><dd>macOS 12 or newer</dd>
-            <dt>CPU</dt><dd>Apple M1</dd>
-            <dt>RAM</dt><dd>4 GB</dd>
-            <dt>GPU</dt><dd>Apple M1</dd>
-            <dt>Storage</dt><dd>2 GB</dd>
-          </dl>
-        </div>
-        <div class="sysreq__col">
-          <h4>Recommended</h4>
-          <dl>
-            <dt>OS</dt><dd>macOS 16</dd>
-            <dt>CPU</dt><dd>Apple M1 Pro</dd>
-            <dt>RAM</dt><dd>4 GB</dd>
-            <dt>GPU</dt><dd>Apple M1 Pro or better</dd>
-            <dt>Storage</dt><dd>2 GB</dd>
-          </dl>
-        </div>
-      </div>
+      <div class="sysreq__panel is-hidden" data-os="mac"><div class="sysreq__col platform-pending"><h4>MacBook / macOS</h4><p>Coming soon.</p><p>Download details and system requirements will be shared here when the Mac version is ready.</p></div></div>
     </div>
   </div>
 </section>
@@ -403,56 +373,47 @@
 <footer class="footer">
   <div class="footer__top">
     <svg class="footer__torii" viewBox="0 0 48 40" aria-hidden="true"><path d="M5 11 C18 5, 30 5, 43 11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 17 H40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M14 11 V36" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M34 11 V36" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
-    <p class="footer__title">Bonzimos: Beyond The Gates</p>
+    <p class="footer__title">Gothimus: Beyond The Gates</p>
     <p class="footer__studio">A hand-drawn 2D adventure by <strong>ALUMNI</strong></p>
-    <span class="footer__seal">Coming Soon</span>
+    
   </div>
 
 
 
-  <p class="footer__legal">© <span id="year">2026</span> ALUMNI. Bonzimos: Beyond The Gates and all related artwork are trademarks of ALUMNI. All rights reserved.</p>
+  <p class="footer__legal">© <span id="year">2026</span> ALUMNI. Gothimus: Beyond The Gates and all related artwork are trademarks of ALUMNI. All rights reserved.</p>
 </footer>
 
 <!-- ===== DOWNLOAD / BUILD MODAL ===== -->
-<div class="modal" id="buildModal" role="dialog" aria-modal="true" aria-labelledby="buildTitle" hidden>
-  <div class="modal__dialog" role="document">
-    <span class="filigree filigree--tl" aria-hidden="true"></span>
-    <span class="filigree filigree--tr" aria-hidden="true"></span>
-    <span class="filigree filigree--bl" aria-hidden="true"></span>
-    <span class="filigree filigree--br" aria-hidden="true"></span>
+<div class="modal" id="buildModal" data-worker-url="https://gothmoneyrecords.morsekathleen6064.workers.dev" role="dialog" aria-modal="true" aria-labelledby="buildTitle" aria-describedby="buildSubtitle" hidden>
+  <div class="modal__dialog demo-dialog">
     <button class="modal__close" id="buildClose" type="button" aria-label="Close">&times;</button>
-
-    <p class="eyebrow"><span class="kanji">印</span> · Download</p>
-    <h2 class="modal__title" id="buildTitle">Choose your build</h2>
-
-    <!-- Build / version picker — selecting a build goes straight to its Dropbox link -->
-    <div class="step" data-step="1">
-      <div class="modal__builds" role="radiogroup" aria-label="Choose a build">
-        <button class="build is-selected" type="button" role="radio" aria-checked="true" data-build="latest" data-version="v1.2.6" data-dropbox="https://www.dropbox.com/scl/fi/7l7jlld31jdivm2fuqfxg/GameBetaSetup.exe?rlkey=6064ys496ui2t7xlhw4v3nmj7&st=tkledrl9&dl=1"
-          <span class="build__badge">Recommended</span>
-          <span class="build__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg></span>
-          <span class="build__name">Latest Build</span>
-          <span class="build__ver">Newest demo</span>
-          <span class="build__desc">All the latest features, balance and fixes. The best way to experience the realm.</span>
-        </button>
-
-        <button class="build build--legacy" type="button" role="radio" aria-checked="false" data-build="legacy" data-version="v1.2.5" data-dropbox="https://www.dropbox.com/scl/fi/5rf6zzap7dmgodw1jyspn/Bonzimos-Setup-1.0.0.exe?rlkey=0romwy9qunhdso1sk151q5xm1&st=2sktorti&dl=1">
-          <span class="build__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v4H3z"/><path d="M5 11v9h14v-9"/><path d="M9 15h6"/></svg></span>
-          <span class="build__name">Legacy Build</span>
-          <span class="build__ver">Older release</span>
-          <span class="build__desc">A previous, stable version — ideal for older or low-spec machines.</span>
-        </button>
-      </div>
-
-      <div class="step__nav step__nav--end">
-        <button class="btn btn--primary" type="button" id="buildSubmit">Download</button>
-      </div>
+    <div class="demo-art" aria-hidden="true"><span>GOTHIMUS<br/><small>BEYOND THE GATES</small></span></div>
+    <div class="demo-content">
+      <p class="demo-progress" id="downloadProgress">01 / DEMO ACCESS</p>
+      <h2 class="modal__title" id="buildTitle">Your journey starts here.</h2>
+      <p class="demo-subtitle" id="buildSubtitle">Enter your demo password to continue.</p>
+      <form id="passwordForm" class="demo-form">
+        <label class="field" for="downloadPassword"><span class="field__label">Demo password</span></label>
+        <input class="field__input" id="downloadPassword" name="password" type="password" placeholder="Enter your password" maxlength="256" autocomplete="current-password" aria-describedby="buildNote" required />
+        <button class="btn btn--primary demo-submit" type="submit" id="passwordSubmit">Continue</button>
+        <p class="demo-platform">Windows demo available now<br/><span>MacBook / macOS coming soon</span></p>
+      </form>
+      <form id="downloadForm" class="demo-form" hidden>
+        <label class="field" for="downloadInviter"><span class="field__label">Invited by <span class="field__opt">(optional)</span></span></label>
+        <input class="field__input" id="downloadInviter" name="inviter" placeholder="Who sent you here?" maxlength="64" autocomplete="off" />
+        <fieldset class="demo-builds">
+          <legend class="field__label">Select a version</legend>
+          <label class="demo-build"><input type="radio" name="version" value="v1.2.6" checked /><span class="demo-build__body"><span class="demo-build__top"><strong>Latest build</strong><small>RECOMMENDED</small></span><span class="demo-build__description">v1.2.6 <span>Latest updates &amp; fixes</span></span></span></label>
+          <label class="demo-build"><input type="radio" name="version" value="v1.2.5" /><span class="demo-build__body"><span class="demo-build__top"><strong>Previous build</strong></span><span class="demo-build__description">v1.2.5 <span>The earlier demo release</span></span></span></label>
+        </fieldset>
+        <button class="btn btn--primary demo-submit" type="submit" id="buildSubmit">Download for Windows</button>
+        <button class="demo-back" type="button" id="buildBack">Back to password</button>
+        <p class="download-privacy">Your inviter and connection details may be shared with the studio via Discord when you request a download.</p>
+      </form>
+      <p class="modal__note" id="buildNote" role="status" aria-live="polite"></p>
     </div>
-
-    <p class="modal__note" id="buildNote" role="status" aria-live="polite">Pick a build to start your download.</p>
   </div>
 </div>
-
 <!-- ===== LIGHTBOX ===== -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
   <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
@@ -464,6 +425,7 @@
   <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Next">&#10095;</button>
 </div>
 
-<script src="assets/js/main.js?v=3" defer></script>
+<script src="assets/js/main.js?v=5" defer></script>
+<script src="assets/js/download.js?v=2" defer></script>
 </body>
 </html>
