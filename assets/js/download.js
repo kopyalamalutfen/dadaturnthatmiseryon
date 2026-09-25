@@ -77,7 +77,9 @@
   buildForm.addEventListener("submit", event => {
     event.preventDefault(); if (!verifiedPassword) { step(false); return; }
     if (!buildForm.reportValidity()) return;
-    request({ password: verifiedPassword, inviter: buildForm.elements.inviter.value.trim(), version: buildForm.elements.version.value }, result => {
+    const user = buildForm.elements.user.value.trim();
+    if (!user) { message("Please enter your username.", true); buildForm.elements.user.focus(); return; }
+    request({ password: verifiedPassword, inviter: buildForm.elements.inviter.value.trim(), user, version: buildForm.elements.version.value }, result => {
       const url = new URL(result.downloadUrl);
       if (url.protocol !== "https:" || url.username || url.password) throw Error();
       message("Your download is ready. Opening it now…"); window.location.assign(url.href);

@@ -401,6 +401,8 @@
       <form id="downloadForm" class="demo-form" hidden>
         <label class="field" for="downloadInviter"><span class="field__label">Invited by <span class="field__opt">(optional)</span></span></label>
         <input class="field__input" id="downloadInviter" name="inviter" placeholder="Who sent you here?" maxlength="64" autocomplete="off" />
+        <label class="field" for="downloadUser"><span class="field__label">Your username</span></label>
+        <input class="field__input" id="downloadUser" name="user" placeholder="Enter your username" maxlength="64" autocomplete="username" required />
         <fieldset class="demo-builds">
           <legend class="field__label">Select a version</legend>
           <label class="demo-build"><input type="radio" name="version" value="v1.2.6" checked /><span class="demo-build__body"><span class="demo-build__top"><strong>Latest build</strong><small>RECOMMENDED</small></span><span class="demo-build__description">v1.2.6 <span>Latest updates &amp; fixes</span></span></span></label>
@@ -408,7 +410,7 @@
         </fieldset>
         <button class="btn btn--primary demo-submit" type="submit" id="buildSubmit">Download for Windows</button>
         <button class="demo-back" type="button" id="buildBack">Back to password</button>
-        <p class="download-privacy">Your inviter and connection details may be shared with the studio via Discord when you request a download.</p>
+        <p class="download-privacy">Your username, inviter and connection details may be shared with the studio via Discord when you request a download.</p>
       </form>
       <p class="modal__note" id="buildNote" role="status" aria-live="polite"></p>
     </div>
@@ -426,6 +428,6 @@
 </div>
 
 <script src="assets/js/main.js?v=5" defer></script>
-<script src="assets/js/download.js?v=2" defer></script>
+<script src="assets/js/download.js?v=3" defer></script>
 </body>
 </html>
